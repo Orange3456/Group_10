@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map - Landslide Susceptibility Mapping Group 10</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
+	body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            box-sizing: border-box;
+        }
         #map {
             height: calc(100vh - 40px); /* Adjusted for the height of the coordinates div */
             width: 100%;
@@ -23,29 +32,35 @@
             z-index: 1000;
         }
         header {
-            background-color: #4CAF50;
+            background-color: rgba(90, 90, 90, 0.8);
             color: white;
             padding: 1em 0;
             text-align: center;
+            margin: 20px;
+            border-radius: 5px;
         }
-        nav ul {
+       nav ul {
             list-style-type: none;
-            padding: 0;
-            margin: 0;
+            padding: 0, 1em; 
         }
         nav ul li {
             display: inline;
-            margin-right: 15px;
+            margin-right: 40px;
         }
         nav ul li a {
             color: white;
+            font-size:18px;
             text-decoration: none;
         }
         footer {
-            background-color: #4CAF50;
+            background-color: rgba(94, 90, 90, 0.5);
             color: white;
             text-align: center;
-            padding: 1em 0;
+            padding: .5em 0;
+            margin-top: 10px;
+            position: static;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
